@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header__block">
+    <div class="logo_block">
+        <img src="https://capp.nicepage.com/4a49f5ca6000c379ff927d7b68b8f32fb627a2dd/images/default-logo.png"
+             alt="logo">
+    </div>
+    <div class="open_menu_icon">
+        <div class="bl-line"></div>
+        <div class="bl-line"></div>
+        <div class="bl-line"></div>
+    </div>
+    <div class="hidden_menu_block">
+        <div class="overlay"></div>
+        <div class="hidden_menu">
+            <nav>
+                <ul>
+                    <li class="nav__item"><a href="#" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li class="nav__item"><a href="#" class="nav__link">home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Support</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="intro_layout__block">
+        <div></div>
+    </section>
+</main>
+<script>
+    let overlay = document.querySelector('.overlay')
+    let menuBlock = document.querySelector('.hidden_menu')
+
+    const menuIcon = document.querySelector('.open_menu_icon');
+
+    let opened = false;
+    menuIcon.addEventListener('click', () => {
+        opened = !opened;
+        menuBlock.className = opened ? ''
+    })
+</script>
+</body>
+</html>
